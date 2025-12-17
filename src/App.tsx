@@ -20,7 +20,7 @@ function App() {
 
   const handleAddSubject = (name: string, syllabus: string) => {
     const newSubject: Subject = {
-      id: Date.now().toString(),
+      id: crypto.randomUUID(),
       name,
       syllabus,
       topics: []

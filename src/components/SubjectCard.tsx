@@ -32,7 +32,7 @@ export default function SubjectCard({ subject, onUpdateSubject, onDeleteSubject 
 
   const handleAddTopic = (topicName: string) => {
     const newTopic: Topic = {
-      id: Date.now().toString(),
+      id: crypto.randomUUID(),
       name: topicName,
       completed: false
     };
